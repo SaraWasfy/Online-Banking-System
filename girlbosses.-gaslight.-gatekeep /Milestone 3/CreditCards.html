@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Credit Cards</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Tables.css">
+    <script> 
+
+      function topFunction() {
+          //let points = parseInt(mypoints.innerText); // Get the current points value as an integer
+
+          if (document.getElementById("cards").value == 123880) {
+             // Deduct the specified points
+              document.getElementById("amount1").value = 0;
+              alert("Your chosen credit card " +document.getElementById("cards").value+" is fully paid");
+              //mypoints.innerText = points; // Update the points value in the HTML
+          } else {
+            document.getElementById("amount2").value = 0;
+            alert("Your chosen credit card " +document.getElementById("cards").value+" is fully paid");
+          }
+      }
+      function topFunction1() {
+          const val = document.getElementById("partial").value;
+          const val2 = document.getElementById("amount1").value;
+          const val3 = document.getElementById("amount2").value;
+          //let points = parseInt(mypoints.innerText); // Get the current points value as an integer
+
+          if (document.getElementById("cards").value == 123880) {
+            document.getElementById("amount1").value= (document.getElementById("amount1").value)- (document.getElementById("partial").value); // Deduct the specified points
+              document.getElementById("amount1").value = document.getElementById("amount1").value;
+              alert("The amount " + val + " has been paid off your chosen credit card")
+              //mypoints.innerText = points; // Update the points value in the HTML
+          } else {
+            document.getElementById("amount2").value= (document.getElementById("amount2").value)- (document.getElementById("partial").value);;
+              document.getElementById("amount2").value = document.getElementById("amount2").value;
+              alert("The amount " + val + " has been paid off your chosen credit card")
+          }
+      }
+  </script>
+</head>
+<body>
+    <section id="navbar">
+        <nav class="navbar navbar-expand-lg ">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="Homepage.html"><img src="IMG/Logo1.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="Homepage.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="services.html">SERVICES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="technicalForm.html">REPORT AN ISSUE</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Homepage.html#bottom1">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Homepage.html#bottom">CONTACT</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </section>
+    <h1>Credit Cards</h1>
+    <table>
+        <tr>
+            <th class="first">Card Number</th>
+            <th class="first">Client's Name</th>
+            <th class="first">Account Number</th>
+            <th class="first">Type</th>
+            <th class="first">Amount Due</th>
+            <th class="first">Limit</th>
+            <th class="first">Date Issued</th>
+            <th class="first">Expiry Date</th>
+        </tr>
+        <tr>
+            <th class="second" id="no1">123880</th>
+            <th class="second" id="name1">Sara Wasfy</th>
+            <th class="second" id="Acc no.">123456</th>
+            <th class="second">Platinum</th>
+            <th class="second"><input type="text" id="amount1" value="10000" disabled/></th>
+            <th class="second">500000</th>
+            <th class="second">7/22</th>
+            <th class="second">7/27</th>
+        </tr>
+        <tr>
+          <th class="third" id="no1">544684</th>
+          <th class="third" id="name1">Zeina Ayman</th>
+          <th class="third" id="Acc no.">548482</th>
+          <th class="third">Golden</th>
+          <th class="third"><input type="text" id="amount2" value="9000" disabled/></th>
+          <th class="third">50000</th>
+          <th class="third">11/20</th>
+          <th class="third">11/25</th>
+      </tr>
+        <tr><th><br><br><br><br><br><br><br><br></th></tr>
+        <tr>
+          <th colspan="1.5">
+          <label for="cards">Choose a Card:</label>
+
+          <select name="Cards" id="cards">
+          <option value="123880" id="firstcard">123880</option>
+          <option value="544684" id="secondcard">544684</option>
+          </select></th>
+          <th colspan="2.5"><input type="button" onclick= "topFunction()" value="Pay the bill fully" id="Pay Full" class="button"></th>
+          <th colspan="3"><input type="button" onclick="topFunction1()" value="Pay the bill partially" id="Pay Partial" class="button"></th>
+          <th colspan="2"><label>Partial amount</label><br><input type="number" id ="partial" placeholder="Enter partial amount" class="box"></th>
+        </tr>
+    
+    </table>
+</body>
+<footer><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></footer>
+</html>

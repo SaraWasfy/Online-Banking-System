@@ -1,0 +1,119 @@
+body{
+  font-family: sans-serif;
+}
+#nav-bar{
+    position: sticky;
+    top: 0;
+    margin: -3;
+    z-index: 10;
+  }
+  .navbar{
+    background: linear-gradient(to right,#e4eaf8,#4e6eb2);
+    padding: 0!important ;
+    width: 100%;
+  }
+  .navbar-brand img{
+    height: 60px;
+    padding-left: 20px;
+  }
+  .navbar-nav li{
+    padding: 0 10px;
+    margin-left: 20px;
+  }
+  .navbar-nav li a{
+    color: #fff !important;
+    font-weight: 600;
+    float: right;
+    text-align: left;
+  }
+  .fa-bars{
+    color: #000;
+    font-size: 30px;
+  }
+  .container-fluid .navbar-toggler{
+    padding: 8px 15px;
+    border: 3px solid #e4eaf8;
+  }
+  
+h1{
+    color: steelblue;
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+}
+.container { 
+    height: 200px;
+    position: relative;
+    border: none; 
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.button{
+    background-color: cornflowerblue;
+    position: relative;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30%;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+label{
+    color: #2f426b;
+    font-weight: bold;
+    font-size: 20px;
+    display: block;
+    float: left;
+}
+
+input,select,textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#social-media{
+  background-color: #c0c0c0;
+  padding: 100px 0;
+}
+#social-media p{
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.social-icons img{
+  width: 60px;
+  transition: all 0.3s linear;
+}
+.social-icons a:hover img{
+  transform: translateY(-10px);
+}
+#footer {
+  background-image:  linear-gradient(to right,#a517ba,#5f1782); 
+  overflow: hidden;
+}
+.footer img{
+  width: 100%;
+}
+.footer-box{
+  padding: 20px;
+}
+.footer-box img{
+  width: 120px;
+  margin-bottom: 20px;
+}
